@@ -1,0 +1,40 @@
+<div class="container" style="padding:20px">
+
+    <table class="table table-bordered">
+
+        <thead class="table-dark">
+            <tr>
+                <th scope="col">
+                    SNo
+                </th>
+                <th scope="col">
+                    Name
+                </th>
+                <th scope="col">
+                    Gender
+                </th>
+                <th scope="col">
+                    Role
+                </th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr *ngFor="let data of jsonoutput">
+                <td>
+                    {{data.sno}}
+                </td>
+                <td>
+                    {{data.name}}
+                </td>
+                <td>
+                    {{data.gender}}
+                </td>
+                <td>
+                    {{data.role}}
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+</div>
